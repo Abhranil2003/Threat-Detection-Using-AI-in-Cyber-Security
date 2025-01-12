@@ -89,5 +89,3 @@ Contributions are welcome! If you wish to improve the project or add new feature
 This project is licensed under the MIT License. See the `LICENSE` file for more details.
 
 ---
-
-**Author:** Abhranil Poddar
