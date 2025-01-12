@@ -1,34 +1,93 @@
 # Threat Detection Using AI in Cyber Security
+**Author:** Abhranil Poddar
 
-## Overview
+This project leverages artificial intelligence and machine learning techniques to enhance threat detection in the field of cybersecurity. The goal is to identify, analyze, and mitigate potential threats using advanced data processing and modeling.
 
-The "Threat Detection Using AI in Cyber Security" project aims to develop a threat detection system using machine learning algorithms. The project consists of several steps, each of which contributes to the overall goal of enhancing cyber security. Here's an overview of each step:
+## Project Structure
 
-### Step 1: Data Preprocessing (pre-process.ipynb)
+### `attack-division.ipynb`
+- Divides and organizes data specific to various types of cyberattacks.
+- Provides insights into the distribution and characteristics of attack data.
+- Includes visualizations to better understand the impact and frequency of different types of threats.
 
-- This step involves data preprocessing to prepare the dataset for machine learning.
-- The dataset used is the CIC-IDS2017 dataset, which should be stored in the "CSVs" folder located in the same directory as the program.
-- The datasets can be accessed through [here](https://www.unb.ca/cic/datasets/ids-2017.html).
+### `feature-selection.ipynb`
+- Implements feature selection techniques such as correlation analysis and mutual information.
+- Reduces dimensionality by identifying the most relevant features for threat detection.
+- Improves model performance by eliminating irrelevant or redundant attributes.
 
-### Step 2: Attack Data Filtering (attack-division.ipynb)
+### `machine-learning-sep.ipynb`
+- Applies various machine learning algorithms, including:
+  - Decision Trees
+  - Random Forests
+  - Support Vector Machines (SVM)
+  - Neural Networks
+- Evaluates model performance using metrics like accuracy, precision, recall, and F1-score.
+- Compares results to determine the most effective model for threat classification.
 
-- In this step, the program uses the "all_data.csv" file to create attack-specific files.
-- These attack files are then saved in the "./attacks/" directory for further analysis.
-- The dataset contains a total of 12 attack types, and this step separates them for individual examination.
+### `pre-process.ipynb`
+- Focuses on data cleaning and transformation:
+  - Handles missing values and outliers.
+  - Normalizes data for consistent scaling.
+  - Encodes categorical variables for compatibility with machine learning algorithms.
+  - Utilizes the `CIC-IDS2017` dataset stored in CSV format for preprocessing and analysis.
+    The CIC-IDS2017 dataset can be accessed through [here](https://www.unb.ca/cic/datasets/ids-2017.html).
+- Prepares the dataset for further analysis and modeling.
 
-### Step 3: Feature Selection and Machine Learning (feature-selection.ipynb)
+## Features
 
-- This step focuses on feature selection for the attack files created in Step 2.
-- The program identifies the four features with the highest weight for each file.
-- These selected features are used as input for machine learning algorithms.
+- End-to-end pipeline for cybersecurity threat detection.
+- Preprocessing and feature selection for effective modeling.
+- Machine learning models for accurate classification of threats.
+- Insights into attack-specific data organization.
 
-### Step 4: Machine Learning Algorithm Evaluation (machine-learning-sep.ipynb)
+## Requirements
 
-- The final step applies seven machine learning algorithms to each attack file multiple times for robust evaluation.
-- Results of these operations are displayed on the screen and saved in the file "./attacks/results_1.csv".
-- Additionally, box and whisker graphics representing the results are generated.
-- Both the graphics and results are saved in the "./attacks/result_graph_1/" folder.
-## Dataset Source
+- Python 3.x
+- Jupyter Notebook
+- Required Python Libraries:
+  - `numpy`
+  - `pandas`
+  - `scikit-learn`
+  - `matplotlib`
+  - `seaborn`
 
-The CIC-IDS2017 dataset can be accessed through [here](https://www.unb.ca/cic/datasets/ids-2017.html).
+Install the dependencies using:
 
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/yourusername/threat-detection-ai.git
+   cd threat-detection-ai
+   ```
+
+2. Install the required dependencies.
+
+3. Open the Jupyter Notebooks and execute the cells in sequence for each phase of the project:
+   - Data preprocessing (`pre-process.ipynb`)
+   - Feature selection (`feature-selection.ipynb`)
+   - Attack-specific analysis (`attack-division.ipynb`)
+   - Model training and evaluation (`machine-learning-sep.ipynb`)
+
+## Results
+
+- A well-defined pipeline for cybersecurity threat detection.
+- Visualization and insights derived from the data.
+- Performance metrics of machine learning models.
+
+## Contribution
+
+Contributions are welcome! If you wish to improve the project or add new features, please fork the repository and submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
+
+---
+
+**Author:** Abhranil Poddar
