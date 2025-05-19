@@ -1,4 +1,5 @@
 # Threat Detection Using AI in Cyber Security
+
 **Author:** Abhranil Poddar
 
 This project leverages artificial intelligence and machine learning techniques to enhance threat detection in the field of cybersecurity. The goal is to identify, analyze, and mitigate potential threats using advanced data processing and modeling.
@@ -6,16 +7,19 @@ This project leverages artificial intelligence and machine learning techniques t
 ## Project Structure
 
 ### `attack-division.ipynb`
+
 - Divides and organizes data specific to various types of cyberattacks.
 - Provides insights into the distribution and characteristics of attack data.
 - Includes visualizations to better understand the impact and frequency of different types of threats.
 
 ### `feature-selection.ipynb`
+
 - Implements feature selection techniques such as correlation analysis and mutual information.
 - Reduces dimensionality by identifying the most relevant features for threat detection.
 - Improves model performance by eliminating irrelevant or redundant attributes.
 
 ### `machine-learning-sep.ipynb`
+
 - Applies various machine learning algorithms, including:
   - Decision Trees
   - Random Forests
@@ -25,6 +29,7 @@ This project leverages artificial intelligence and machine learning techniques t
 - Compares results to determine the most effective model for threat classification.
 
 ### `pre-process.ipynb`
+
 - Focuses on data cleaning and transformation:
   - Handles missing values and outliers.
   - Normalizes data for consistent scaling.
